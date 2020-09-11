@@ -132,7 +132,7 @@ request.send();
    
 	var http = new XMLHttpRequest();
 	var uri = url+'api/productos-venta/buscar?palabra='+palabra;
-	http.open('POST', url, true);
+	http.open('POST', uri, true);
 
 	//enviar los encabezados a la petición para csrf
 	http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
