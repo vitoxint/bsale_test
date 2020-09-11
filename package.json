@@ -1,0 +1,13 @@
+{
+    "name": "bsale_test",
+    "version": "1.0.0",
+    "description": "Prueba Bsale admision",
+
+    "scripts": {
+        "start": "serve"
+      },
+      "dependencies": {
+        "serve": "^10.0.1"
+      },
+      "author": "Victor Monsalves"
+    }
