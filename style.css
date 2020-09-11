@@ -1,0 +1,87 @@
+#root {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  border: 1px solid gray;
+	
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(30% - 3rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(25% - 3rem);
+  }
+}
+
+label {
+
+font-family: 'arial';
+padding:5px;
+
+}
+
+
+/* menu lateral */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 230px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #818181; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  font-family: 'arial';
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+/* hover */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* pagina contenido productos */
+.main {
+  margin-left: 300px; /* Same as the width of the sidebar */
+  padding: 0px 40px;
+  margin-top: 35px;
+  padding-left: 300px;
+}
+
+#buscador {
+  margin-left: 300px !important; 
+  padding-left: 300px;
+}
+
+#buscar{
+  width:500px;
+  height:25px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
